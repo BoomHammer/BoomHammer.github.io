@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[2018年出差的几张图片]]></title>
+    <url>%2F2019%2F02%2F07%2F2018%E5%B9%B4%E5%87%BA%E5%B7%AE%E7%9A%84%E5%87%A0%E5%BC%A0%E5%9B%BE%E7%89%87%2F</url>
+    <content type="text"><![CDATA[&ensp;&ensp;&ensp;&ensp;出差的时候用手机拍了几张照片，11月去听了社团里大佬的ps讲座，拿ps修了修就投到北京生态学论坛的摄影比赛了，没想到有不少人给我投票，还有人说喜欢我的作品。真是想不到呀。 &ensp;&ensp;&ensp;&ensp;个人而言最喜欢最后这张。]]></content>
+      <categories>
+        <category>照片</category>
+      </categories>
+      <tags>
+        <tag>照片</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F02%2F07%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
