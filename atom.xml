@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Oto Workshop</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-02-07T17:11:46.446Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>BoomHammer</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2018年出差的几张图片</title>
+    <link href="http://yoursite.com/2019/02/07/2018%E5%B9%B4%E5%87%BA%E5%B7%AE%E7%9A%84%E5%87%A0%E5%BC%A0%E5%9B%BE%E7%89%87/"/>
+    <id>http://yoursite.com/2019/02/07/2018年出差的几张图片/</id>
+    <published>2019-02-07T14:58:32.000Z</published>
+    <updated>2019-02-07T17:11:46.446Z</updated>
+    
+    <content type="html"><![CDATA[<p>&ensp;&ensp;&ensp;&ensp;出差的时候用手机拍了几张照片，11月去听了社团里<a href="https://haige.tuchong.com/posts/2017-02/" target="_blank" rel="noopener">大佬</a>的ps讲座，拿ps修了修就投到北京生态学论坛的摄影比赛了，没想到有不少人给我投票，还有人说喜欢我的作品。真是想不到呀。<br><a id="more"></a></p><p><img src="/2019/02/07/2018年出差的几张图片/1.jpg" alt="&quot;班戈的减雨棚&quot;" title="班戈的减雨棚"><br><img src="/2019/02/07/2018年出差的几张图片/2.jpg" alt="那曲站的牛牛" title="那曲站的牛牛"><br><img src="/2019/02/07/2018年出差的几张图片/3.jpg" alt="纳木措边上的冰川" title="纳木措边上的冰川"><br><img src="/2019/02/07/2018年出差的几张图片/4.jpg" alt="纳木措湖边的朱师兄" title="纳木措湖边的朱师兄"></p><p>&ensp;&ensp;&ensp;&ensp;个人而言最喜欢最后这张。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;出差的时候用手机拍了几张照片，11月去听了社团里&lt;a href=&quot;https://haige.tuchong.com/posts/2017-02/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;大佬&lt;/a&gt;的ps讲座，拿ps修了修就投到北京生态学论坛的摄影比赛了，没想到有不少人给我投票，还有人说喜欢我的作品。真是想不到呀。&lt;br&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="照片" scheme="http://yoursite.com/categories/%E7%85%A7%E7%89%87/"/>
+    
+    
+      <category term="照片" scheme="http://yoursite.com/tags/%E7%85%A7%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/02/07/hello-world/"/>
+    <id>http://yoursite.com/2019/02/07/hello-world/</id>
+    <published>2019-02-07T05:11:44.675Z</published>
+    <updated>2019-02-07T05:11:44.676Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
