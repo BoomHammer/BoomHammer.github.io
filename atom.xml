@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-07T17:11:46.446Z</updated>
+  <updated>2019-02-08T07:57:16.277Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,73 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用ArcGIS统计内蒙各县市GPP、NPP均值</title>
+    <link href="http://yoursite.com/2019/02/08/%E4%BD%BF%E7%94%A8ArcGIS%E7%BB%9F%E8%AE%A1%E5%86%85%E8%92%99%E5%90%84%E5%8E%BF%E5%B8%82GPP%E3%80%81NPP%E5%9D%87%E5%80%BC/"/>
+    <id>http://yoursite.com/2019/02/08/使用ArcGIS统计内蒙各县市GPP、NPP均值/</id>
+    <published>2019-02-08T06:41:14.000Z</published>
+    <updated>2019-02-08T07:57:16.277Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>&ensp;&ensp;&ensp;&ensp;杜老师给的任务，老师给的任务谁想接呢？可是另一边又有500篇文献的统计工作，反正是干，不如干个和自己相关，好歹能学点东西的工作。本来在干之前想的是用掩膜提取，然后计算各个小栅格的均值，整个过程都用ArcGIS的“模型”功能来做，然而实际上是用“以表格显示分区统计”工具，直接用行政区划矢量图计算各县市的均值，而且由于操作诡异，没法用模型功能。<br>&ensp;&ensp;&ensp;&ensp;整个过程相当曲折，一方面是自己傻，另一方面是因为ArcGIS总出各种奇怪问题。<br>&ensp;&ensp;&ensp;&ensp;之前用的都是盗版的ArcGIS 10.2，学校既然买了正版就用呗，第一次没卸旧版本直接安新版本，安坏了，遂重装。后来是空间分析工具用不了，真的蠢到家了，各种上网查、重装、到群里问，忙了一下午直到2点，忽然不知道怎的，灵光一现想起来自己没在设置里把空间分析的对勾打上。<br>&ensp;&ensp;&ensp;&ensp;ArcGIS也是怪的不行，偏偏分区统计就要报错，我也是试着用各种办法解决，知道最后报错成了999999，超图和ENVI也报错，我就知道这个问题是没法解决了。换个思路，重新做，第一步栅格图镶嵌的时候不用.tif格式，改用.dat格式，忽然就成了。说来奇怪，后来又试了其他Esri格式，都不行，只有.dat不报错。于是之前用了几天时间镶嵌的.tif格式的图像都白做了，重来吧。😀<br>&ensp;&ensp;&ensp;&ensp;最后是回家的时候，忘了把许可从学校借出来（想借出的时候正在尝试用渔网点提取栅格信息然后汇总，可是数据量太大，一直不错结果），回家又用回了盗版。</p><h4 id="数据获取"><a href="#数据获取" class="headerlink" title="数据获取"></a>数据获取</h4><p>&ensp;&ensp;&ensp;&ensp;从<a href="https://search.earthdata.nasa.gov/search" target="_blank" rel="noopener">NASA Earth Data</a>找到modis NPP和GPP图像（modis 官网搜索功能太弱，不想这里能直接搜想要的时间和地区的图像）。使用“Chrono下载管理器”批量下载（难用得不行，可是对方服务器禁止用迅雷之类的下载工具下载）。在ArcGIS中使用“镶嵌至新栅格”，将图像拼接，格式为.dat。需要注意的是：官网上是8天尺度的GPP数据，要想转成年尺度，需要用sum累加，而不是mean计算均值，刚开始我是用mean计算的，结果很小，后来多方考证，经过胡老师提醒去看了官方是使用手册，才搞清楚。<br><img src="http://wx2.sinaimg.cn/large/d8e43cfdly1fzz22rel6bj20x80e6ada.jpg" alt="&quot;mod17_user_guide&quot;" title="原文，没有直接说明，但可以推测出来">  </p><h4 id="分区统计"><a href="#分区统计" class="headerlink" title="分区统计"></a>分区统计</h4><p>&ensp;&ensp;&ensp;&ensp;未完待续（许可又出问题了，回学校重装吧）</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h4 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h4&gt;&lt;p&gt;&amp;ensp;&amp;ensp;&amp;ensp;&amp;ensp;杜老师给的任务，老师给的任务谁想接呢？可是另一边又有500篇文献的统计工作，反正是干，不如干
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="ArcGIS" scheme="http://yoursite.com/tags/ArcGIS/"/>
+    
+      <category term="遥感" scheme="http://yoursite.com/tags/%E9%81%A5%E6%84%9F/"/>
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工具类网址集合</title>
+    <link href="http://yoursite.com/2019/02/08/%E5%B7%A5%E5%85%B7%E7%B1%BB%E7%BD%91%E5%9D%80%E9%9B%86%E5%90%88/"/>
+    <id>http://yoursite.com/2019/02/08/工具类网址集合/</id>
+    <published>2019-02-08T06:20:44.000Z</published>
+    <updated>2019-02-08T07:49:08.815Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="一些常用的网址，后期慢慢更新："><a href="#一些常用的网址，后期慢慢更新：" class="headerlink" title="一些常用的网址，后期慢慢更新："></a>一些常用的网址，后期慢慢更新：</h3><h4 id="搭建博客："><a href="#搭建博客：" class="headerlink" title="搭建博客："></a>搭建博客：</h4><p>Hexo: <a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/</a> （博客框架）<br>Next: <a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">http://theme-next.iissnan.com/</a> （主题）<br>LeanCloud: <a href="https://leancloud.cn/" target="_blank" rel="noopener">https://leancloud.cn/</a> （实现阅读量统计功能）<br>Valine: <a href="https://valine.js.org/" target="_blank" rel="noopener">https://valine.js.org/</a> （基于LeanCloud实现评论功能）<br>reuixiy：<a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html</a> （优秀案例）<br>emoji表情：<a href="http://emojihomepage.com/" target="_blank" rel="noopener">http://emojihomepage.com/</a></p><h4 id="遥感数据："><a href="#遥感数据：" class="headerlink" title="遥感数据："></a>遥感数据：</h4><h5 id="数据下载："><a href="#数据下载：" class="headerlink" title="数据下载："></a>数据下载：</h5><p>NASA Earth Data: <a href="https://search.earthdata.nasa.gov/search" target="_blank" rel="noopener">https://search.earthdata.nasa.gov/search</a><br>地理空间数据云: <a href="http://www.gscloud.cn/" target="_blank" rel="noopener">http://www.gscloud.cn/</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;一些常用的网址，后期慢慢更新：&quot;&gt;&lt;a href=&quot;#一些常用的网址，后期慢慢更新：&quot; class=&quot;headerlink&quot; title=&quot;一些常用的网址，后期慢慢更新：&quot;&gt;&lt;/a&gt;一些常用的网址，后期慢慢更新：&lt;/h3&gt;&lt;h4 id=&quot;搭建博客：&quot;&gt;&lt;a hre
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="遥感" scheme="http://yoursite.com/tags/%E9%81%A5%E6%84%9F/"/>
+    
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="网址" scheme="http://yoursite.com/tags/%E7%BD%91%E5%9D%80/"/>
+    
+      <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
     <title>2018年出差的几张图片</title>
     <link href="http://yoursite.com/2019/02/07/2018%E5%B9%B4%E5%87%BA%E5%B7%AE%E7%9A%84%E5%87%A0%E5%BC%A0%E5%9B%BE%E7%89%87/"/>
     <id>http://yoursite.com/2019/02/07/2018年出差的几张图片/</id>
     <published>2019-02-07T14:58:32.000Z</published>
-    <updated>2019-02-07T17:11:46.446Z</updated>
+    <updated>2019-02-08T06:38:17.177Z</updated>
     
-    <content type="html"><![CDATA[<p>&ensp;&ensp;&ensp;&ensp;出差的时候用手机拍了几张照片，11月去听了社团里<a href="https://haige.tuchong.com/posts/2017-02/" target="_blank" rel="noopener">大佬</a>的ps讲座，拿ps修了修就投到北京生态学论坛的摄影比赛了，没想到有不少人给我投票，还有人说喜欢我的作品。真是想不到呀。<br><a id="more"></a></p><p><img src="/2019/02/07/2018年出差的几张图片/1.jpg" alt="&quot;班戈的减雨棚&quot;" title="班戈的减雨棚"><br><img src="/2019/02/07/2018年出差的几张图片/2.jpg" alt="那曲站的牛牛" title="那曲站的牛牛"><br><img src="/2019/02/07/2018年出差的几张图片/3.jpg" alt="纳木措边上的冰川" title="纳木措边上的冰川"><br><img src="/2019/02/07/2018年出差的几张图片/4.jpg" alt="纳木措湖边的朱师兄" title="纳木措湖边的朱师兄"></p><p>&ensp;&ensp;&ensp;&ensp;个人而言最喜欢最后这张。</p>]]></content>
+    <content type="html"><![CDATA[<p>&ensp;&ensp;&ensp;&ensp;出差的时候用手机拍了几张照片，11月去听了社团里<a href="https://haige.tuchong.com/posts/2017-02/" target="_blank" rel="noopener">大佬</a>的ps讲座，拿ps修了修就投到北京生态学论坛的摄影比赛了，没想到有不少人给我投票，还有人说喜欢我的作品。真是想不到呀。<br><a id="more"></a><br><img src="http://wx3.sinaimg.cn/large/d8e43cfdly1fzyzkn6c4sj21hc0u0qv7.jpg" alt="&quot;班戈的减雨棚&quot;" title="班戈的减雨棚"><br><img src="http://wx2.sinaimg.cn/large/d8e43cfdly1fzyzl5qug4j20u01904qt.jpg" alt="那曲站的牛牛" title="那曲站的牛牛"><br><img src="http://wx1.sinaimg.cn/large/d8e43cfdly1fzyzla80hdj21y10u0e83.jpg" alt="纳木措边上的冰川" title="纳木措边上的冰川"><br><img src="http://wx4.sinaimg.cn/large/d8e43cfdly1fzyzlehbinj21hc0u04qr.jpg" alt="纳木措湖边的朱师兄" title="纳木措湖边的朱师兄"><br><!--!["班戈的减雨棚"](2018年出差的几张图片/1.jpg "班戈的减雨棚")![那曲站的牛牛](2018年出差的几张图片/2.jpg "那曲站的牛牛")![纳木措边上的冰川](2018年出差的几张图片/3.jpg "纳木措边上的冰川")![纳木措湖边的朱师兄](2018年出差的几张图片/4.jpg "纳木措湖边的朱师兄")--><br>&ensp;&ensp;&ensp;&ensp;个人而言最喜欢最后这张。</p>]]></content>
     
     <summary type="html">
     
@@ -35,6 +95,8 @@
     
     
       <category term="照片" scheme="http://yoursite.com/tags/%E7%85%A7%E7%89%87/"/>
+    
+      <category term="西藏" scheme="http://yoursite.com/tags/%E8%A5%BF%E8%97%8F/"/>
     
   </entry>
   
