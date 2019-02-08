@@ -37,11 +37,11 @@
       <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="ArcGIS" scheme="http://yoursite.com/tags/ArcGIS/"/>
     
       <category term="遥感" scheme="http://yoursite.com/tags/%E9%81%A5%E6%84%9F/"/>
     
-      <category term="ArcGIS" scheme="http://yoursite.com/tags/ArcGIS/"/>
+      <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
@@ -66,11 +66,11 @@
       <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="网址" scheme="http://yoursite.com/tags/%E7%BD%91%E5%9D%80/"/>
+      <category term="遥感" scheme="http://yoursite.com/tags/%E9%81%A5%E6%84%9F/"/>
     
       <category term="技术" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="遥感" scheme="http://yoursite.com/tags/%E9%81%A5%E6%84%9F/"/>
+      <category term="网址" scheme="http://yoursite.com/tags/%E7%BD%91%E5%9D%80/"/>
     
       <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
