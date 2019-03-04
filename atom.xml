@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-08T07:57:16.277Z</updated>
+  <updated>2019-03-04T14:37:19.091Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>42英寸武装大艇制作</title>
+    <link href="http://yoursite.com/2019/03/04/42%E8%8B%B1%E5%AF%B8%E6%AD%A6%E8%A3%85%E5%A4%A7%E8%89%87%E5%88%B6%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/03/04/42英寸武装大艇制作/</id>
+    <published>2019-03-04T14:37:19.000Z</published>
+    <updated>2019-03-04T14:37:19.091Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用ArcGIS统计内蒙各县市GPP、NPP均值</title>
     <link href="http://yoursite.com/2019/02/08/%E4%BD%BF%E7%94%A8ArcGIS%E7%BB%9F%E8%AE%A1%E5%86%85%E8%92%99%E5%90%84%E5%8E%BF%E5%B8%82GPP%E3%80%81NPP%E5%9D%87%E5%80%BC/"/>
     <id>http://yoursite.com/2019/02/08/使用ArcGIS统计内蒙各县市GPP、NPP均值/</id>
     <published>2019-02-08T06:41:14.000Z</published>
-    <updated>2019-02-08T07:57:16.277Z</updated>
+    <updated>2019-03-04T15:28:50.720Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>&ensp;&ensp;&ensp;&ensp;杜老师给的任务，老师给的任务谁想接呢？可是另一边又有500篇文献的统计工作，反正是干，不如干个和自己相关，好歹能学点东西的工作。本来在干之前想的是用掩膜提取，然后计算各个小栅格的均值，整个过程都用ArcGIS的“模型”功能来做，然而实际上是用“以表格显示分区统计”工具，直接用行政区划矢量图计算各县市的均值，而且由于操作诡异，没法用模型功能。<br>&ensp;&ensp;&ensp;&ensp;整个过程相当曲折，一方面是自己傻，另一方面是因为ArcGIS总出各种奇怪问题。<br>&ensp;&ensp;&ensp;&ensp;之前用的都是盗版的ArcGIS 10.2，学校既然买了正版就用呗，第一次没卸旧版本直接安新版本，安坏了，遂重装。后来是空间分析工具用不了，真的蠢到家了，各种上网查、重装、到群里问，忙了一下午直到2点，忽然不知道怎的，灵光一现想起来自己没在设置里把空间分析的对勾打上。<br>&ensp;&ensp;&ensp;&ensp;ArcGIS也是怪的不行，偏偏分区统计就要报错，我也是试着用各种办法解决，知道最后报错成了999999，超图和ENVI也报错，我就知道这个问题是没法解决了。换个思路，重新做，第一步栅格图镶嵌的时候不用.tif格式，改用.dat格式，忽然就成了。说来奇怪，后来又试了其他Esri格式，都不行，只有.dat不报错。于是之前用了几天时间镶嵌的.tif格式的图像都白做了，重来吧。😀<br>&ensp;&ensp;&ensp;&ensp;最后是回家的时候，忘了把许可从学校借出来（想借出的时候正在尝试用渔网点提取栅格信息然后汇总，可是数据量太大，一直不错结果），回家又用回了盗版。</p><h4 id="数据获取"><a href="#数据获取" class="headerlink" title="数据获取"></a>数据获取</h4><p>&ensp;&ensp;&ensp;&ensp;从<a href="https://search.earthdata.nasa.gov/search" target="_blank" rel="noopener">NASA Earth Data</a>找到modis NPP和GPP图像（modis 官网搜索功能太弱，不想这里能直接搜想要的时间和地区的图像）。使用“Chrono下载管理器”批量下载（难用得不行，可是对方服务器禁止用迅雷之类的下载工具下载）。在ArcGIS中使用“镶嵌至新栅格”，将图像拼接，格式为.dat。需要注意的是：官网上是8天尺度的GPP数据，要想转成年尺度，需要用sum累加，而不是mean计算均值，刚开始我是用mean计算的，结果很小，后来多方考证，经过胡老师提醒去看了官方是使用手册，才搞清楚。<br><img src="http://wx2.sinaimg.cn/large/d8e43cfdly1fzz22rel6bj20x80e6ada.jpg" alt="&quot;mod17_user_guide&quot;" title="原文，没有直接说明，但可以推测出来">  </p><h4 id="分区统计"><a href="#分区统计" class="headerlink" title="分区统计"></a>分区统计</h4><p>&ensp;&ensp;&ensp;&ensp;未完待续（许可又出问题了，回学校重装吧）</p>]]></content>
+    <content type="html"><![CDATA[<h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>&ensp;&ensp;&ensp;&ensp;杜老师给的任务，老师给的任务谁想接呢？可是另一边又有500篇文献的统计工作，反正是干，不如干个和自己相关，好歹能学点东西的工作。本来在干之前想的是用掩膜提取，然后计算各个小栅格的均值，整个过程都用ArcGIS的“模型”功能来做，然而实际上是用“以表格显示分区统计”工具，直接用行政区划矢量图计算各县市的均值，而且由于操作诡异，没法用模型功能。<br>&ensp;&ensp;&ensp;&ensp;整个过程相当曲折，一方面是自己傻，另一方面是因为ArcGIS总出各种奇怪问题。<br>&ensp;&ensp;&ensp;&ensp;之前用的都是盗版的ArcGIS 10.2，学校既然买了正版就用呗，第一次没卸旧版本直接安新版本，安坏了，遂重装。后来是空间分析工具用不了，真的蠢到家了，各种上网查、重装、到群里问，忙了一下午直到2点，忽然不知道怎的，灵光一现想起来自己没在设置里把空间分析的对勾打上。<br>&ensp;&ensp;&ensp;&ensp;ArcGIS也是怪的不行，偏偏分区统计就要报错，我也是试着用各种办法解决，知道最后报错成了999999，超图和ENVI也报错，我就知道这个问题是没法解决了。换个思路，重新做，第一步栅格图镶嵌的时候不用.tif格式，改用.dat格式，忽然就成了。说来奇怪，后来又试了其他Esri格式，都不行，只有.dat不报错。于是之前用了几天时间镶嵌的.tif格式的图像都白做了，重来吧。😀<br>&ensp;&ensp;&ensp;&ensp;最后是回家的时候，忘了把许可从学校借出来（想借出的时候正在尝试用渔网点提取栅格信息然后汇总，可是数据量太大，一直不错结果），回家又用回了盗版。</p><h4 id="数据获取"><a href="#数据获取" class="headerlink" title="数据获取"></a>数据获取</h4><p>&ensp;&ensp;&ensp;&ensp;从<a href="https://search.earthdata.nasa.gov/search" target="_blank" rel="noopener">NASA Earth Data</a>找到modis NPP和GPP图像（modis 官网搜索功能太弱，不想这里能直接搜想要的时间和地区的图像）。使用“Chrono下载管理器”批量下载（难用得不行，可是对方服务器禁止用迅雷之类的下载工具下载）。在ArcGIS中使用“镶嵌至新栅格”，将图像拼接，格式为.dat。需要注意的是：官网上是8天尺度的GPP数据，要想转成年尺度，需要用sum累加，而不是mean计算均值，刚开始我是用mean计算的，结果很小，后来多方考证，经过胡老师提醒去看了官方是使用手册，才搞清楚。<br><img src="http://wx2.sinaimg.cn/large/d8e43cfdly1fzz22rel6bj20x80e6ada.jpg" alt="&quot;mod17_user_guide&quot;" title="原文，没有直接说明，但可以推测出来">  </p><h4 id="分区统计"><a href="#分区统计" class="headerlink" title="分区统计"></a>分区统计</h4><p>&ensp;&ensp;&ensp;&ensp;在工具箱-&gt;空间分析-&gt;区域分析中，找到“以表格显示分区统计”工具；<br>“输入栅格数据或要素区域数据”选择县界或市界；<br>“区域字段”选择一个唯一值字段；<br>“输入赋值栅格”选择GPP、NPP的.dat格式栅格数据；<br>“统计类型”选择MEAN（平均值）。<br><img src="http://wx3.sinaimg.cn/large/d8e43cfdly1g0r5zjp1i3j219s0u0qf7.jpg" alt="&quot;以表格显示分区统计&quot;" title="以表格显示分区统计">  </p><h4 id="将表导出"><a href="#将表导出" class="headerlink" title="将表导出"></a>将表导出</h4><p>&ensp;&ensp;&ensp;&ensp;在得到的表格上面右键，选择“数据”-&gt;“导出”，选择.dbf格式导出。<br><img src="http://wx3.sinaimg.cn/large/d8e43cfdly1g0r5zn0e8ij20u019zdxu.jpg" alt="&quot;导出表格&quot;" title="导出表格">  </p><p><img src="http://wx4.sinaimg.cn/large/d8e43cfdly1g0r5zq8gzrj20ur0kudn4.jpg" alt="&quot;导出表格2&quot;" title="导出表格2"><br>最后在excel中打开保存的表格，并保存（保存时会提示选择.xls格式）</p>]]></content>
     
     <summary type="html">
     
