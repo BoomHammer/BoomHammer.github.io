@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Hexo创建新文章的方法]]></title>
     <url>%2F2019%2F03%2F05%2FHexo%E5%88%9B%E5%BB%BA%E6%96%B0%E6%96%87%E7%AB%A0%E7%9A%84%E6%96%B9%E6%B3%95%2F</url>
-    <content type="text"><![CDATA[&ensp;&ensp;&ensp;&ensp;也许有半个月的时间没更新过博客了，已经完全不记得当初是怎么发布文章的了，遂写一个超基础的教程，也算是一个备忘。&ensp;&ensp;&ensp;&ensp;首先是在博客的文件夹右键，选择“Git Bash Here”，打开控制台。创建文章：12hexo new [layout] &lt;title&gt;hexo new &quot;文章名称&quot; #layout可以为空 &ensp;&ensp;&ensp;&ensp;输入以下命令以启动服务器，网站会在 http://localhost:4000 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，无须重启服务器。123hexo server``` 更新网站时，依次输入： hexo cleanhexo ghexo d`&ensp;&ensp;&ensp;&ensp;g和d为generate和deploy的缩写，也可以使用原文。&ensp;&ensp;&ensp;&ensp;部署完成后就可以在自己的博客上看到更新的内容啦。]]></content>
+    <content type="text"><![CDATA[&ensp;&ensp;&ensp;&ensp;也许有半个月的时间没更新过博客了，已经完全不记得当初是怎么发布文章的了，遂写一个超基础的教程，也算是一个备忘。&ensp;&ensp;&ensp;&ensp;首先是在博客的文件夹右键，选择“Git Bash Here”，打开控制台。创建文章：1hexo new [layout] &lt;title&gt; &ensp;&ensp;&ensp;&ensp;输入以下命令以启动服务器，网站会在 http://localhost:4000 下启动。在服务器启动期间，Hexo 会监视文件变动并自动更新，无须重启服务器。1hexo server 更新网站时，依次输入：123hexo cleanhexo ghexo d &ensp;&ensp;&ensp;&ensp;g和d为generate和deploy的缩写，也可以使用原文。&ensp;&ensp;&ensp;&ensp;部署完成后就可以在自己的博客上看到更新的内容啦。]]></content>
       <categories>
         <category>技术</category>
       </categories>
